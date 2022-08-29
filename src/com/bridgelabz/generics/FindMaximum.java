@@ -5,11 +5,11 @@ package com.bridgelabz.generics;
  */
 public class FindMaximum {
 	
-	// created maximum method to find maximum Integer using compareTo
+	// created maximum Generic method to find maximum value using compareTo
 	
-	public Integer maximum(Integer a, Integer b, Integer c) {
+	public <T extends Comparable <T>> T maximum(T a, T b, T c) {
 		
-		Integer max = a;
+		T max = a;
 		
 		if (b.compareTo(max) > 0) {
 			
@@ -22,41 +22,5 @@ public class FindMaximum {
 		
 		return max;
 	}
-	
-	// created maximum method to find maximum Float using compareTo
-	
-	public Float maximum(Float a, Float b, Float c) {
-		
-		Float max = a;
-		
-		if (b.compareTo(max) > 0) {
-			
-			max = b;
-		
-		} else if (c.compareTo(max) > 0) {
-			
-			max = c;
-		}
-		
-		return max;
-	}
-	
-	// created maximum method to find maximum String using compareTo
-	
-	public String maximum(String a, String b, String c) {
-			
-		String max = a;
-			
-			if (b.compareTo(max) > 0) {
-				
-				max = b;
-			
-			} else if (c.compareTo(max) > 0) {
-				
-				max = c;
-			}
-			
-			return max;
-		}
 	
 }
