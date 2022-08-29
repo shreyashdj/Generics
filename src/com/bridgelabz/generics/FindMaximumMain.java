@@ -15,6 +15,8 @@ public class FindMaximumMain {
 		
 		System.out.println("\n Maximun Float value is : " + findMaximum.maximum(34.32f, 6.34f, 87.21f));
 		
+		System.out.println("\n Maximun Float value is : " + findMaximum.maximum("Shreyash", "Parth", "Omkar"));
+		
 	}
 
 }
